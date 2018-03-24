@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import DieForm from '../components/dice/DieForm'
 import Die from '../components/dice/Die'
 
 export default class extends Component {
@@ -6,7 +7,8 @@ export default class extends Component {
     return (
       <div>
         Dice
-        <Die/>
+        <Die numSides={6}/>
+        <DieForm/>
       </div>
     )
   }
